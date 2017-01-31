@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CodeHQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CodeHQ</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+      <li><a href="script_upload.html" class="btn btn-primary lg" role="button">Upload Script</a></li>
+    </ul>
+  </div>
+</nav>
+  <form>
+    <div class="container">
+        <h2>Upload Script</h2>
+        <div class="form-group">
+          <label for="title">Script Name</label>
+          <input type="text" class="form-control" id="title" placeholder="Enter script name">
+        </div>
+        <div class="form-group">
+          <label for="exampleTextarea">Description</label>
+          <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleSelect2">Select tags</label>
+          <select multiple class="form-control" id="exampleSelect2">
+            <option>Docker</option>
+            <option>Chef</option>
+            <option>Ansible</option>
+            <option>Selenium</option>
+            <option>Jenkins</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          <small id="fileHelp" class="form-text text-muted">Please select the script to be uploaded.</small>
+        </div>
+        <button type="submit" class="btn btn-primary lg">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
